@@ -286,10 +286,10 @@
 <body>
 
   <nav id="mainNav">
-    <a class="nav-logo" href="index.html">Arisht<span>é</span></a>
+    <a class="nav-logo" href="index.php">Arisht<span>é</span></a>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="index.php">Home</a></li>
+      <li><a href="portfolio.php">Portfolio</a></li>
       <li><a href="menu.html" class="active">Menus</a></li>
     </ul>
   </nav>
@@ -393,7 +393,7 @@
         <div style="text-align:center; color:white;">
           <div style="font-family:'Cormorant Garamond',serif; font-size:13px; letter-spacing:3px; text-transform:uppercase; color:var(--gold-light); margin-bottom:18px;">Experience Arishte</div>
           <div style="font-family:'Cormorant Garamond',serif; font-size:32px; font-weight:300; line-height:1.3; margin-bottom:24px;">Tradition Made<br><em>Deliciously Modern</em></div>
-          <a href="index.html#contact" style="display:inline-block;padding:12px 36px;border:1px solid var(--gold-light);color:var(--gold-light);font-size:11px;letter-spacing:3px;text-transform:uppercase;text-decoration:none;transition:background 0.3s;" onmouseover="this.style.background='rgba(184,150,90,0.2)'" onmouseout="this.style.background='transparent'">Book a Visit</a>
+          <a href="index.php#contact" style="display:inline-block;padding:12px 36px;border:1px solid var(--gold-light);color:var(--gold-light);font-size:11px;letter-spacing:3px;text-transform:uppercase;text-decoration:none;transition:background 0.3s;" onmouseover="this.style.background='rgba(184,150,90,0.2)'" onmouseout="this.style.background='transparent'">Book a Visit</a>
         </div>
       </div>
     </div>
@@ -408,8 +408,8 @@
       </div>
       <div class="footer-col">
         <div class="footer-col-title">Navigate</div>
-        <a href="index.html">Home</a>
-        <a href="portfolio.html">Portfolio</a>
+        <a href="index.php">Home</a>
+        <a href="portfolio.php">Portfolio</a>
         <a href="menu.html">Menus</a>
       </div>
       <div class="footer-col">

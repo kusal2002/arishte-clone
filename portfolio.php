@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+include 'values.php';
+?>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -270,11 +273,11 @@
 <body>
 
   <nav id="mainNav">
-    <a class="nav-logo" href="index.html">Arisht<span>é</span></a>
+    <a class="nav-logo" href="index.php">Arisht<span>é</span></a>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
+      <li><a href="index.php">Home</a></li>
       <li><a href="portfolio.html" class="active">Portfolio</a></li>
-      <li><a href="menu.html">Menus</a></li>
+      <li><a href="menu.php">Menus</a></li>
     </ul>
   </nav>
 
@@ -374,7 +377,8 @@
       <div class="founders-text">
         <p class="section-label">Our Vision</p>
         <h3>Hasnika Weerakoon &<br><em>Sidath Gajanayake</em></h3>
-        <p>The Arishte brand story was brought to life by founders Hasnika Weerakoon and Sidath Gajanayake — a conceptualization that encapsulates the essence of preserving and sharing Sri Lanka's rich food heritage.</p>
+        <p>The Arishte brand story was brought to life by founders Hasnika Weerakoon and Sidath Gajanayake — a
+          conceptualisation that encapsulates the essence of preserving and sharing Sri Lanka's rich food heritage.</p>
         <p>Their work emphasizes the fusion of nostalgia, wellness, and celebration, and has become the guiding force behind every product, presentation, and experience that bears the Arishté name.</p>
       </div>
     </div>
@@ -389,16 +393,16 @@
       </div>
       <div class="footer-col">
         <div class="footer-col-title">Navigate</div>
-        <a href="index.html">Home</a>
+        <a href="index.php">Home</a>
         <a href="portfolio.html">Portfolio</a>
-        <a href="menu.html">Menus</a>
+        <a href="menu.php">Menus</a>
       </div>
       <div class="footer-col">
         <div class="footer-col-title">Experience Arishte</div>
         <address>
-          128 Heritage Walk, Colombo 07<br>Sri Lanka<br><br>
-          info@arishte.com<br>
-          +94 11 234 5678
+            <?php echo $address; ?><br>
+            <?php echo $email; ?>
+            <?php echo $contact_no; ?>
         </address>
       </div>
     </div>

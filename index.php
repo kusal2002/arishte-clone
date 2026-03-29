@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+include 'values.php';
+?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -779,8 +782,8 @@
     <a class="nav-logo" href="index.html">Arisht<span>é</span></a>
     <ul class="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="menu.html">Menus</a></li>
+        <li><a href="portfolio.php">Portfolio</a></li>
+        <li><a href="menu.php">Menus</a></li>
     </ul>
 </nav>
 
@@ -792,7 +795,7 @@
         <p class="hero-eyebrow">Established in Colombo · Sri Lanka</p>
         <h1 class="hero-title">Tradition Made<br><em>Deliciously Modern</em></h1>
         <p class="hero-sub">Crafting Traditional Wellness</p>
-        <a href="menu.html" class="btn-primary">Discover Specialties</a>
+        <a href="menu.php" class="btn-primary">Discover Specialties</a>
     </div>
     <div class="hero-scroll">Scroll</div>
 </section>
@@ -810,7 +813,7 @@
             gap between ancient herbal wisdom and contemporary gourmet experiences, ensuring every platter of kavili and
             bowl of herbal kanda reflects the vibrant spirit of our island. Our commitment to premium quality is an
             invitation to rediscover wellness through artisanal taste.</p>
-        <a href="portfolio.html" class="btn-secondary">Explore Our Work</a>
+        <a href="portfolio.php" class="btn-secondary">Explore Our Work</a>
     </div>
 </section>
 
@@ -926,7 +929,7 @@
     <div class="banner-bg"></div>
     <div class="banner-content">
         <h2 class="banner-title">Tradition Made<br><em>Deliciously Modern</em></h2>
-        <a href="menu.html" class="btn-primary">View Our Menus</a>
+        <a href="menu.php" class="btn-primary">View Our Menus</a>
     </div>
 </div>
 
@@ -939,8 +942,7 @@
             <p>Visit Arishte Heritage Kitchen and experience the richness of Sri Lankan culinary heritage in every
                 bite.</p>
             <ul class="contact-details">
-                <li><span>Address</span><span><a href="https://share.google/uxw1gq4iYdJjBG8ir" target="new">No. 27A,
-                    Wedagewatta Road, Kotuwegoda, Sri Lanka</a></span></li>
+                <li><?php echo $address; ?></li>
                 <li><span>Email</span><span><a href="mailto:info@arishte.com">info
                     @arishte.com</a></span></li>
                 <li><span>Phone</span><span><a href="tel:+94707482492">+94707482492</a></span></li>
@@ -987,9 +989,9 @@
 <footer>
     <div class="footer-logo">Arisht<span>é</span></div>
     <ul class="footer-nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="menu.html">Menus</a></li>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="portfolio.php">Portfolio</a></li>
+        <li><a href="menu.php">Menus</a></li>
     </ul>
     <div class="footer-divider"></div>
     <p class="footer-copy">© 2026 Arishte. Tradition Made Deliciously Modern. &nbsp;|&nbsp; Privacy Policy &nbsp;|&nbsp;
