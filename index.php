@@ -779,9 +779,9 @@ include 'values.php';
 <body>
 
 <nav id="mainNav">
-    <a class="nav-logo" href="index.html">Arisht<span>é</span></a>
+    <a class="nav-logo" href="index.php">Arisht<span>é</span></a>
     <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="index.php" class="active">Home</a></li>
         <li><a href="portfolio.php">Portfolio</a></li>
         <li><a href="menu.php">Menus</a></li>
     </ul>
