@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+  <?php
+  include 'values.php';
+  ?>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -258,16 +261,117 @@
     .footer-col a { color: rgba(255,255,255,0.55); text-decoration: none; display: block; margin-bottom: 10px; transition: color 0.3s; }
     .footer-col a:hover { color: var(--gold); }
     .footer-brand {
+      display: flex;
       font-family: 'Cormorant Garamond', serif;
       font-size: 28px; font-weight: 300;
-      color: rgba(255,255,255,0.7);
-      letter-spacing: 4px;
-      margin-bottom: 14px;
+      color: rgba(255,255,255,0.7); letter-spacing: 4px; margin-bottom: 14px;
     }
     .footer-brand span { color: var(--gold); }
     .footer-bottom {
       text-align: center; font-size: 11px; letter-spacing: 1px;
     }
+
+    .logo-img {
+      height: 110px;  
+      width: auto;
+    }
+
+    footer {
+            background: #1A1208;
+            padding: 50px 8% 30px;
+            color: rgba(255, 255, 255, 0.45);
+            text-align: center;
+        }
+
+        .footer-logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 30px;
+            font-weight: 300;
+            color: rgba(255, 255, 255, 0.7);
+            letter-spacing: 4px;
+            margin-bottom: 24px;
+        }
+
+        .footer-logo span {
+            color: var(--gold);
+        }
+
+        .footer-nav {
+            display: flex;
+            justify-content: center;
+            gap: 36px;
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .footer-nav a {
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.45);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-nav a:hover {
+            color: var(--gold);
+        }
+
+        .footer-divider {
+            width: 40px;
+            height: 1px;
+            background: var(--gold);
+            opacity: 0.4;
+            margin: 24px auto;
+        }
+
+        .footer-copy {
+          font-size: 11px;
+          letter-spacing: 1px;
+        }
+
+        .logo-img {
+            height: 110px;  
+            width: auto;
+        }
+
+        
+
+        /* Make the two blocks side by side */
+.contact-columns {
+    display: flex;
+    justify-content: space-between; /* left block left, right block right */
+    align-items: flex-start;
+    gap: 40px; /* space between columns */
+}
+
+/* Left block: contact info styling */
+.contact-info {
+    flex: 1; /* take available width */
+}
+
+/* Right block: brand & description */
+.contact-right {
+    flex: 1; /* take available width */
+    text-align: right; /* optional: align text to right */
+}
+
+/* Footer brand styling */
+.footer-brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.7);
+    letter-spacing: 4px;
+    margin-bottom: 14px;
+}
+
+/* Optional: contact details styling */
+.contact-details li {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 8px;
+}
 
     @media (max-width: 900px) {
       .menu-intro { grid-template-columns: 1fr; }
@@ -286,7 +390,9 @@
 <body>
 
   <nav id="mainNav">
-    <a class="nav-logo" href="index.php">Arisht<span>é</span></a>
+    <a class="nav-logo" href="index.php">
+        <img src="images/ArishteLogo.png" alt="Arishte Logo" class="logo-img">
+    </a>
     <ul class="nav-links">
       <li><a href="index.php">Home</a></li>
       <li><a href="portfolio.php">Portfolio</a></li>
@@ -400,31 +506,42 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="site-footer">
+  <!-- FOOTER -->
+  <section class="site-footer">
     <div class="footer-top">
       <div class="footer-col">
-        <div class="footer-brand">Arisht<span>é</span></div>
+        <a class="footer-logo" href="index.php">
+          <img src="images/ArishteLogo.png" alt="Arishte Logo" class="logo-img">
+        </a>
+
         <p>Arishte honors the soulful heritage of Sri Lanka, blending ancestral herbal wisdom with gourmet craftsmanship for a contemporary lifestyle.</p>
       </div>
       <div class="footer-col">
-        <div class="footer-col-title">Navigate</div>
-        <a href="index.php">Home</a>
-        <a href="portfolio.php">Portfolio</a>
-        <a href="menu.html">Menus</a>
       </div>
       <div class="footer-col">
         <div class="footer-col-title">Experience Arishte</div>
         <address>
-          128 Heritage Walk, Colombo 07<br>Sri Lanka<br><br>
-          info@arishte.com<br>
-          +94 11 234 5678
+            <ul class="contact-details">
+                <li><?php echo $address; ?></li>
+                <li><?php echo $email;?></li>
+                <li><?php echo $contact_no ;?></li>
+            </ul>
         </address>
       </div>
     </div>
-    <div class="footer-bottom">
-      © 2026 Arishte. Tradition Made Deliciously Modern. &nbsp;|&nbsp; Privacy Policy &nbsp;|&nbsp; Terms of Service
-    </div>
-  </footer>
+  </section>
+
+  <footer>
+    
+    <ul class="footer-nav">
+        <li><a href="index.php">Home</a></li>
+        <li><a href="portfolio.php">Portfolio</a></li>
+        <li><a href="menu.php">Menus</a></li>
+    </ul>
+    <div class="footer-divider"></div>
+    <p class="footer-copy">© 2026 Arishte. Tradition Made Deliciously Modern. &nbsp;|&nbsp; Privacy Policy &nbsp;|&nbsp;
+        Terms of Service</p>
+</footer>
 
   <script>
     const nav = document.getElementById('mainNav');

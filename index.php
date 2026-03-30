@@ -741,6 +741,11 @@ include 'values.php';
             letter-spacing: 1px;
         }
 
+        .logo-img {
+            height: 110px;  
+            width: auto;
+        }
+
         @media (max-width: 900px) {
             .about-strip, .contact-inner {
                 grid-template-columns: 1fr;
@@ -786,7 +791,9 @@ include 'values.php';
 <body>
 
 <nav id="mainNav">
-    <a class="nav-logo" href="index.php">Arisht<span>é</span></a>
+    <a class="nav-logo" href="index.php">
+        <img src="images/ArishteLogo.png" alt="Arishte Logo" class="logo-img">
+    </a>
     <ul class="nav-links">
         <li><a href="index.php" class="active">Home</a></li>
         <li><a href="portfolio.php">Portfolio</a></li>
@@ -950,9 +957,8 @@ include 'values.php';
                 bite.</p>
             <ul class="contact-details">
                 <li><?php echo $address; ?></li>
-                <li><span>Email</span><span><a href="mailto:info@arishte.com">info
-                    @arishte.com</a></span></li>
-                <li><span>Phone</span><span><a href="tel:+94707482492">+94707482492</a></span></li>
+                <li><?php echo $email;?></li>
+                <li><?php echo $contact_no ;?></li>
             </ul>
         </div>
         <div class="contact-form">
@@ -994,7 +1000,9 @@ include 'values.php';
 
 <!-- FOOTER -->
 <footer>
-    <div class="footer-logo">Arisht<span>é</span></div>
+    <a class="footer-logo" href="index.php">
+        <img src="images/ArishteLogo.png" alt="Arishte Logo" class="logo-img">
+    </a>
     <ul class="footer-nav">
         <li><a href="index.php">Home</a></li>
         <li><a href="portfolio.php">Portfolio</a></li>
