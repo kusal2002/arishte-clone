@@ -417,17 +417,36 @@ include 'values.php';
         }
 
         .specialties-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
         }
 
+        /* Common card styling */
         .specialty-card {
-            position: relative;
-            overflow: hidden;
-            aspect-ratio: 3/4;
-            cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
         }
+
+        .specialty-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s ease;
+        }
+
+        .specialty-card:hover img {
+        transform: scale(1.08);
+        }
+
+        /* Individual heights */
+        .specialty-card01 { height: 570px; padding-top: 40px;}
+        .specialty-card02 { height: 530px; }
+        .specialty-card03 { height: 570px; padding-top: 40px;}
+        .specialty-card04 { height: 570px; padding-top: 40px;}
+        .specialty-card05 { height: 530px; }
+        .specialty-card06 { height: 570px; padding-top: 40px;}
 
         .specialty-card img {
             width: 100%;
@@ -859,7 +878,7 @@ include 'values.php';
             heritage techniques.</p>
     </div>
     <div class="specialties-grid">
-        <div class="specialty-card">
+        <div class="specialty-card specialty-card01">
             <img src="https://static.wixstatic.com/media/bde431_cd18856b86604cc39e312efe3f63e158~mv2.jpg"
                  alt="Hathmaluwa Herbal Kanda">
             <div class="specialty-overlay">
@@ -867,7 +886,7 @@ include 'values.php';
                 <div class="specialty-desc">An artisanal blend of traditional healing greens.</div>
             </div>
         </div>
-        <div class="specialty-card">
+        <div class="specialty-card specialty-card02">
             <img src="https://static.wixstatic.com/media/bde431_a52d619329a04350984a0a8a7f851554~mv2.jpg"
                  alt="Awrudu Kavili Platter">
             <div class="specialty-overlay">
@@ -875,7 +894,7 @@ include 'values.php';
                 <div class="specialty-desc">Our signature selection of heritage festive sweets.</div>
             </div>
         </div>
-        <div class="specialty-card">
+        <div class="specialty-card specialty-card03">
             <img src="https://static.wixstatic.com/media/bde431_86d979a3ea2145d2b66f4b18c167b622~mv2.jpg"
                  alt="Gotukola Wellness Blend">
             <div class="specialty-overlay">
@@ -883,7 +902,7 @@ include 'values.php';
                 <div class="specialty-desc">High-nutrient vitality drink derived from premium leaves.</div>
             </div>
         </div>
-        <div class="specialty-card">
+        <div class="specialty-card specialty-card04">
             <img src="https://static.wixstatic.com/media/bde431_0c394f5a470a4743825f10982f9f7578~mv2.jpg"
                  alt="Karapincha Vitality Porridge">
             <div class="specialty-overlay">
@@ -891,7 +910,7 @@ include 'values.php';
                 <div class="specialty-desc">A nourishing tonic prepared with traditional stone-ground techniques.</div>
             </div>
         </div>
-        <div class="specialty-card">
+        <div class="specialty-card specialty-card05">
             <img src="https://static.wixstatic.com/media/bde431_9ffd46879dff4985b67623546e379d83~mv2.jpg"
                  alt="Kokis & Mun-Kavum Trio">
             <div class="specialty-overlay">
@@ -899,7 +918,7 @@ include 'values.php';
                 <div class="specialty-desc">Artisanal festive favorites, light and delightfully crispy.</div>
             </div>
         </div>
-        <div class="specialty-card">
+        <div class="specialty-card specialty-card06">
             <img src="https://static.wixstatic.com/media/bde431_cbfd4f13d10c4ce597322583fe6d17b7~mv2.jpg"
                  alt="Konda Kavum Collection">
             <div class="specialty-overlay">
