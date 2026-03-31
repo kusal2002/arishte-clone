@@ -319,6 +319,11 @@ include 'values.php';
             height: 110px;  
             width: auto;
         }
+        .logo-footer {
+          height: 110px; 
+          margin-top: -30px; 
+          width: auto;
+        }
 
         .contact-details li {
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -465,7 +470,7 @@ include 'values.php';
     <div class="footer-top">
       <div class="footer-col">
         <a class="footer-logo" href="index.php">
-          <img src="images/ArishteLogo.png" alt="Arishte Logo" class="logo-img">
+          <img src="images/ArishteLogo.png" alt="Arishte Logo" class="logo-footer">
         </a>
 
         <p>Arishte honours the soulful heritage of Sri Lanka, blending ancestral herbal wisdom with gourmet craftsmanship for a contemporary lifestyle.</p>

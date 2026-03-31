@@ -275,6 +275,11 @@
       height: 110px;  
       width: auto;
     }
+  .logo-footer {
+      height: 110px; 
+      margin-top: -30px; 
+      width: auto;
+    }
 
     footer {
             background: #1A1208;
@@ -284,11 +289,6 @@
         }
 
         .footer-logo {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 30px;
-            font-weight: 300;
-            color: rgba(255, 255, 255, 0.7);
-            letter-spacing: 4px;
             margin-bottom: 24px;
         }
 
@@ -494,7 +494,7 @@
         <div class="infusion-body">
           <h3>Coriander Cleanse</h3>
           <p>A delicate coriander infusion, slowly brewed to release its soft warmth and gentle spice. Light, clear, and calming, this blend offers a refreshing refreshing infusion with a smooth, comforting finish.</p>
-          <p style="margin-top:12px;color:var(--gold);font-size:13px;font-weight:500;">LKR 7.50</p>
+          <!--<p style="margin-top:12px;color:var(--gold);font-size:13px;font-weight:500;">LKR 7.50</p>-->
         </div>
       </div>
       <div class="infusion-card" style="background: linear-gradient(135deg, var(--deep-brown), var(--mid-brown)); display:flex; align-items:center; justify-content:center; padding:40px; min-height:300px;">
@@ -513,7 +513,7 @@
     <div class="footer-top">
       <div class="footer-col">
         <a class="footer-logo" href="index.php">
-          <img src="images/ArishteLogo.png" alt="Arishte Logo" class="logo-img">
+          <img src="images/ArishteLogo.png" alt="Arishte Logo" class="logo-footer">
         </a>
 
         <p>Arishte honours the soulful heritage of Sri Lanka, blending ancestral herbal wisdom with gourmet craftsmanship for a contemporary lifestyle.</p>
