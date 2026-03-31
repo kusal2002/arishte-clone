@@ -368,9 +368,11 @@
 
 /* Optional: contact details styling */
 .contact-details li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     display: flex;
     gap: 10px;
     margin-bottom: 8px;
+    gap: 20px;
 }
 
     @media (max-width: 900px) {

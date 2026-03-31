@@ -243,6 +243,7 @@ include 'values.php';
       color: rgba(255,255,255,0.55);
     }
     .footer-col a {
+      
       color: rgba(255,255,255,0.55); text-decoration: none;
       display: block; margin-bottom: 10px; transition: color 0.3s;
     }
@@ -318,6 +319,14 @@ include 'values.php';
             height: 110px;  
             width: auto;
         }
+
+        .contact-details li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    gap: 10px;
+    margin-bottom: 8px;
+    gap: 20px;
+}
 
 
     @media (max-width: 900px) {

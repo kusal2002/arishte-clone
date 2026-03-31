@@ -981,17 +981,13 @@ include 'values.php';
             </ul>
         </div>
         <div class="contact-form">
-            <p class="section-label" style="color:var(--gold-light);">Application Form</p>
-            <div class="form-row">
+            <p class="section-label" style="color:var(--gold-light);">Get in Touch</p>
+        
                 <div class="form-group">
-                    <label>First Name</label>
-                    <input type="text" placeholder="First name">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Full name">
                 </div>
-                <div class="form-group">
-                    <label>Last Name</label>
-                    <input type="text" placeholder="Last name">
-                </div>
-            </div>
+            
             <div class="form-group">
                 <label>Email Address</label>
                 <input type="email" placeholder="your@email.com">
@@ -1001,18 +997,10 @@ include 'values.php';
                 <input type="tel" placeholder="+94 ...">
             </div>
             <div class="form-group">
-                <label>Position Applying For</label>
-                <input type="text" placeholder="Position">
+                <label>Message</label>
+                <textarea placeholder="Feel free to ask for details, don't save any questions!"></textarea>
             </div>
-            <div class="form-group">
-                <label>Current / Previous Company</label>
-                <input type="text" placeholder="Company name">
-            </div>
-            <div class="form-group">
-                <label>Work Experience</label>
-                <textarea placeholder="Brief description of your experience..."></textarea>
-            </div>
-            <button class="btn-submit">Submit Application</button>
+            <button class="btn-submit">Submit</button>
         </div>
     </div>
 </section>
