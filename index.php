@@ -915,7 +915,7 @@ include 'values.php';
                  alt="Kokis & Mun-Kavum Trio">
             <div class="specialty-overlay">
                 <div class="specialty-name">Kokis & Mun-Kavum Trio</div>
-                <div class="specialty-desc">Artisanal festive favorites, light and delightfully crispy.</div>
+                <div class="specialty-desc">Artisanal festive favourites, light and delightfully crispy.</div>
             </div>
         </div>
         <div class="specialty-card specialty-card06">
@@ -971,7 +971,7 @@ include 'values.php';
     <div class="contact-inner">
         <div class="contact-info">
             <p class="section-label" style="color:var(--gold-light);">Reach Us</p>
-            <h2><em>Inquire &</em><br>Taste Tradition</h2>
+            <h2><em>Enquire &</em><br>Taste Tradition</h2>
             <p>Visit Arishte Heritage Kitchen and experience the richness of Sri Lankan culinary heritage in every
                 bite.</p>
             <ul class="contact-details">
@@ -998,7 +998,7 @@ include 'values.php';
             </div>
             <div class="form-group">
                 <label>Message</label>
-                <textarea placeholder="Feel free to ask for details, don't save any questions!"></textarea>
+                <textarea placeholder="Feel free to ask for details, don’t hesitate to ask any questions!"></textarea>
             </div>
             <button class="btn-submit">Submit</button>
         </div>

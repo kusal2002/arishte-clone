@@ -415,7 +415,7 @@
   <!-- INTRO -->
   <div class="menu-intro">
     <div class="menu-intro-label">Morning <em>Rituals</em></div>
-    <p class="menu-intro-text">Start your day with intention, balance, and natural nourishment. Arishté Morning Rituals are thoughtfully crafted herbal blends inspired by traditional Sri Lankan wellness practices, designed to gently awaken your body, support digestion, and energize your mind. Each ritual is more than a drink — it's a moment of calm, clarity, and care before the day begins.</p>
+    <p class="menu-intro-text">Start your day with intention, balance, and natural nourishment. Arishté Morning Rituals are thoughtfully crafted herbal blends inspired by traditional Sri Lankan wellness practices, designed to gently awaken your body, support digestion, and energise your mind. Each ritual is more than a drink — it's a moment of calm, clarity, and care before the day begins.</p>
   </div>
 
   <!-- KANDA MENU -->
@@ -479,7 +479,7 @@
   <section class="infusions-section">
     <div class="menu-section-header">
       <h2>Arishté <em>Infusions</em></h2>
-      <p>Delicate blends of fruits, spices, and botanicals, thoughtfully crafted to awaken the senses. Each infusion is light, aromatic, and designed for effortless, everyday balance.</p>
+      <p>Delicate blends of fruits, spices, and botanicals, thoughtfully crafted to awaken the senses. Each infusion is light, aromatic, and designed for effortless, daily balance.</p>
     </div>
     <div class="infusions-grid">
       <div class="infusion-card">
@@ -493,7 +493,7 @@
         <img src="https://static.wixstatic.com/media/bde431_6765426448244c2da9ba45ab0e38c23c~mv2.png" alt="Coriander Cleanse">
         <div class="infusion-body">
           <h3>Coriander Cleanse</h3>
-          <p>A delicate coriander infusion, slowly brewed to release its soft warmth and gentle spice. Light, clear, and calming, this blend offers a refreshing cleanse with a smooth, comforting finish.</p>
+          <p>A delicate coriander infusion, slowly brewed to release its soft warmth and gentle spice. Light, clear, and calming, this blend offers a refreshing refreshing infusion with a smooth, comforting finish.</p>
           <p style="margin-top:12px;color:var(--gold);font-size:13px;font-weight:500;">LKR 7.50</p>
         </div>
       </div>
@@ -516,7 +516,7 @@
           <img src="images/ArishteLogo.png" alt="Arishte Logo" class="logo-img">
         </a>
 
-        <p>Arishte honors the soulful heritage of Sri Lanka, blending ancestral herbal wisdom with gourmet craftsmanship for a contemporary lifestyle.</p>
+        <p>Arishte honours the soulful heritage of Sri Lanka, blending ancestral herbal wisdom with gourmet craftsmanship for a contemporary lifestyle.</p>
       </div>
       <div class="footer-col">
       </div>

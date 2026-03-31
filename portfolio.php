@@ -382,7 +382,7 @@ include 'values.php';
         <div class="portfolio-item-overlay">
           <div class="portfolio-item-num">01</div>
           <div class="portfolio-item-name">Awrudu Kavili Platters</div>
-          <p class="portfolio-item-desc">An elegant display of Arishte's Awrudu kavili platters. This project focuses on the artful arrangement of traditional Sri Lankan sweets and savories, celebrating festive occasions with a touch of refined nostalgia.</p>
+          <p class="portfolio-item-desc">An elegant display of Arishte's Awrudu kavili platters. This project focuses on the artful arrangement of traditional Sri Lankan sweets and savouries, celebrating festive occasions with a touch of refined nostalgia.</p>
         </div>
       </div>
 
@@ -405,10 +405,10 @@ include 'values.php';
       </div>
 
       <div class="portfolio-item">
-        <img src="https://static.wixstatic.com/media/bde431_c3821fee0c5c4d3dadb53e8c36d69d8f~mv2.jpg" alt="Modernizing Sri Lankan Delicacies">
+        <img src="https://static.wixstatic.com/media/bde431_c3821fee0c5c4d3dadb53e8c36d69d8f~mv2.jpg" alt="Modernising Sri Lankan Delicacies">
         <div class="portfolio-item-overlay">
           <div class="portfolio-item-num">04</div>
-          <div class="portfolio-item-name">Modernizing Sri Lankan Delicacies</div>
+          <div class="portfolio-item-name">Modernising Sri Lankan Delicacies</div>
           <p class="portfolio-item-desc">Demonstrating Arishte's unique approach to blending timeless Sri Lankan food traditions with modern aesthetics and refined presentation.</p>
         </div>
       </div>
@@ -428,7 +428,7 @@ include 'values.php';
         <div class="portfolio-item-overlay">
           <div class="portfolio-item-num">06</div>
           <div class="portfolio-item-name">Arishte: Heritage Porridge Collection</div>
-          <p class="portfolio-item-desc">Showcasing Arishte's signature traditional Sri Lankan herbal kanda. This project highlights the authentic ingredients, health benefits, and rich culinary heritage of each porridge variant, presented with modern elegance.</p>
+          <p class="portfolio-item-desc">Showcasing Arishte's signature traditional Sri Lankan herbal kanda. This project highlights the authentic ingredients, health benefits, and rich culinary heritage of each porridge varieties, presented with modern elegance.</p>
         </div>
       </div>
 
@@ -455,7 +455,7 @@ include 'values.php';
         <h3>Hasnika Weerakoon &<br><em>Sidath Gajanayake</em></h3>
         <p>The Arishte brand story was brought to life by founders Hasnika Weerakoon and Sidath Gajanayake — a
           conceptualisation that encapsulates the essence of preserving and sharing Sri Lanka's rich food heritage.</p>
-        <p>Their work emphasizes the fusion of nostalgia, wellness, and celebration, and has become the guiding force behind every product, presentation, and experience that bears the Arishté name.</p>
+        <p>Their work emphasises the fusion of nostalgia, wellness, and celebration, and has become the guiding force behind every product, presentation, and experience that bears the Arishté name.</p>
       </div>
     </div>
   </section>
@@ -468,7 +468,7 @@ include 'values.php';
           <img src="images/ArishteLogo.png" alt="Arishte Logo" class="logo-img">
         </a>
 
-        <p>Arishte honors the soulful heritage of Sri Lanka, blending ancestral herbal wisdom with gourmet craftsmanship for a contemporary lifestyle.</p>
+        <p>Arishte honours the soulful heritage of Sri Lanka, blending ancestral herbal wisdom with gourmet craftsmanship for a contemporary lifestyle.</p>
       </div>
       <div class="footer-col">
       </div>
