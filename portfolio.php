@@ -453,12 +453,12 @@ include 'values.php';
     </div>
     <div class="founders-grid">
       <div class="founders-img-wrap">
-        <img src="https://static.wixstatic.com/media/bde431_ade4c1898d004fba8be0309fe942ff92~mv2.png" alt="Arishte Founders">
+        <img src="<?php echo $logo_url; ?>" alt="Arishte Founders">
       </div>
       <div class="founders-text">
         <p class="section-label">Our Vision</p>
-        <h3>Hasnika Weerakoon &<br><em>Sidath Gajanayake</em></h3>
-        <p>The Arishte brand story was brought to life by founders Hasnika Weerakoon and Sidath Gajanayake — a
+<!--        <h3>Hasnika Weerakoon &<br><em>Sidath Gajanayaka</em></h3>-->
+        <p>The Arishte brand story was brought to life by founders Hasnika Weerakoon and Sidath Gajanayaka — a
           conceptualisation that encapsulates the essence of preserving and sharing Sri Lanka's rich food heritage.</p>
         <p>Their work emphasises the fusion of nostalgia, wellness, and celebration, and has become the guiding force behind every product, presentation, and experience that bears the Arishté name.</p>
       </div>
@@ -479,13 +479,23 @@ include 'values.php';
       </div>
       <div class="footer-col">
         <div class="footer-col-title">Experience Arishte</div>
-        <address>
-            <ul class="contact-details">
-                <li><?php echo $address; ?></li>
-                <li><?php echo $email;?></li>
-                <li><?php echo $contact_no ;?></li>
-            </ul>
-        </address>
+          <address>
+              <table style="border-collapse: collapse;">
+                  <tr>
+                      <td style="font-weight:bold; color: var(--gold); width: 100px; text-align: right; padding-right: 20px; vertical-align: top;">Address</td>
+                      <td style="vertical-align: top;"><?php echo $address_text_only; ?></td>
+                  </tr>
+                  <tr>
+                      <td style="font-weight:bold; color: var(--gold); width: 100px; text-align: right; padding-right: 20px; vertical-align: top;">Email</td>
+                      <td style="vertical-align: top;"><?php echo $email_text_only; ?></td>
+                  </tr>
+                  <tr>
+                      <td style="font-weight:bold; color: var(--gold); width: 100px; text-align: right; padding-right: 20px; vertical-align: top;">Contact</td>
+                      <td style="vertical-align: top;"><?php echo $contact_no_text_only; ?></td>
+                  </tr>
+              </table>
+
+          </address>
       </div>
     </div>
   </section>
