@@ -471,12 +471,12 @@ include 'values.php';
         }
 
         /* Individual heights */
-        .specialty-card01 { height: 570px; padding-top: 40px;}
-        .specialty-card02 { height: 530px; }
-        .specialty-card03 { height: 570px; padding-top: 40px;}
-        .specialty-card04 { height: 570px; padding-top: 40px;}
-        .specialty-card05 { height: 530px; }
-        .specialty-card06 { height: 570px; padding-top: 40px;}
+        .specialty-card01 { height: 570px; }
+        .specialty-card02 { height: 570px; }
+        .specialty-card03 { height: 570px; }
+        .specialty-card04 { height: 570px; }
+        .specialty-card05 { height: 570px; }
+        .specialty-card06 { height: 570px; }
 
         .specialty-card img {
             width: 100%;
