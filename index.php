@@ -1226,6 +1226,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <li><?php echo $address; ?></li>
                 <li><?php echo $email;?></li>
                 <li><?php echo $contact_no ;?></li>
+                
             </ul>
         </div>
         <div class="contact-form">
@@ -1262,9 +1263,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <!-- FOOTER -->
 <footer>
-    <a class="footer-logo" href="index.php">
-        <img src="images/ArishteLogo.png" alt="Arishte Logo" class="logo-img">
-    </a>
+    <?php echo $social_icons; ?>
+    <?php echo "<br>"; ?>
     <ul class="footer-nav">
         <li><a href="index.php">Home</a></li>
         <li><a href="portfolio.php">Portfolio</a></li>

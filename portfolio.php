@@ -598,6 +598,7 @@ include 'values.php';
   </section>
 
   <footer>
+    <?php echo $social_icons; ?>
     
     <ul class="footer-nav">
         <li><a href="index.php">Home</a></li>
