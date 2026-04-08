@@ -127,6 +127,36 @@ include 'values.php';
             width: 100%;
         }
 
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: var(--deep-brown);
+            margin: 4px 0;
+            transition: all 0.3s ease;
+            display: block;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(10px, 10px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -7px);
+        }
+
         /* HERO */
         .hero {
             height: 100vh;
@@ -793,8 +823,50 @@ include 'values.php';
                 padding: 0 5%;
             }
 
+            .hamburger {
+                display: flex;
+            }
+
             .nav-links {
+                display: flex;
+                position: absolute;
+                top: 72px;
+                left: 0;
+                right: 0;
+                background: rgba(253, 250, 245, 0.98);
+                backdrop-filter: blur(12px);
+                flex-direction: column;
+                gap: 0;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease;
+                border-bottom: 1px solid rgba(184, 150, 90, 0.15);
+                z-index: 99;
+            }
+
+            .nav-links.active {
+                max-height: 300px;
+            }
+
+            .nav-links li {
+                padding: 16px 5%;
+                border-bottom: 1px solid rgba(184, 150, 90, 0.1);
+                display: block;
+            }
+
+            .nav-links a {
+                font-size: 11px;
+                display: block;
+                padding-bottom: 0;
+            }
+
+            .nav-links a::after {
                 display: none;
+            }
+
+            .nav-links a.active,
+            .nav-links a:hover {
+                color: var(--gold);
             }
 
             .specialties-grid {
@@ -813,7 +885,12 @@ include 'values.php';
     <a class="nav-logo" href="index.php">
         <img src="images/ArishteLogo.png" alt="Arishte Logo" class="logo-img">
     </a>
-    <ul class="nav-links">
+    <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
         <li><a href="index.php" class="active">Home</a></li>
         <li><a href="portfolio.php">Portfolio</a></li>
         <li><a href="menu.php">Menus</a></li>
@@ -1022,8 +1099,23 @@ include 'values.php';
 
 <script>
     const nav = document.getElementById('mainNav');
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    
     window.addEventListener('scroll', () => {
         nav.classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    });
+
+    navLinks.addEventListener('click', (e) => {
+        if (e.target.tagName === 'A') {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('active');
+        }
     });
 </script>
 </body>
