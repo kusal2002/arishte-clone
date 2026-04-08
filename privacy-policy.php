@@ -542,8 +542,11 @@ include 'values.php';
 <section class="site-footer">
     <div class="footer-top">
         <div class="footer-col">
-            <div class="footer-brand">Aris<span>hte</span></div>
-            <p>Tradition made deliciously modern. Wellness through heritage.</p>
+            <a class="footer-logo" href="index.php">
+                <img src="images/ArishteLogo.png" alt="Arishte Logo" class="logo-footer">
+            </a>
+            <p>Arishte honours the soulful heritage of Sri Lanka, blending ancestral herbal wisdom with gourmet
+                craftsmanship for a contemporary lifestyle.</p>
         </div>
         <div class="footer-col">
         </div>
@@ -576,7 +579,7 @@ include 'values.php';
         <li><a href="menu.php">Menus</a></li>
     </ul>
     <div class="footer-divider"></div>
-    <p class="footer-copy">© 2026 Arishte. Tradition Made Deliciously Modern. &nbsp;|&nbsp; <a href="privacy-policy.php">Privacy Policy</a> &nbsp;|&nbsp;
+    <p class="footer-copy">© 2026 Tradition Made Deliciously Modern. &nbsp;|&nbsp; <a href="privacy-policy.php">Privacy Policy</a> &nbsp;|&nbsp;
         <a href="terms-of-service.php">Terms of Service</a></p>
 </footer>
 
