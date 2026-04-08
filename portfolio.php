@@ -345,6 +345,16 @@ include 'values.php';
             letter-spacing: 1px;
         }
 
+        .footer-copy a {
+            color: rgba(255, 255, 255, 0.45);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-copy a:hover {
+            color: var(--gold);
+        }
+
         .logo-img {
             height: 110px;  
             width: auto;
@@ -595,8 +605,8 @@ include 'values.php';
         <li><a href="menu.php">Menus</a></li>
     </ul>
     <div class="footer-divider"></div>
-    <p class="footer-copy">© 2026 Arishte. Tradition Made Deliciously Modern. &nbsp;|&nbsp; Privacy Policy &nbsp;|&nbsp;
-        Terms of Service</p>
+    <p class="footer-copy">© 2026 Arishte. Tradition Made Deliciously Modern. &nbsp;|&nbsp; <a href="privacy-policy.php">Privacy Policy</a> &nbsp;|&nbsp;
+        <a href="terms-of-service.php">Terms of Service</a></p>
 </footer>
 
 

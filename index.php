@@ -787,12 +787,27 @@ include 'values.php';
 
         .footer-copy {
             font-size: 11px;
-            letter-spacing: 1px;
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            unicode-bidi: isolate;
         }
 
         .logo-img {
             height: 110px;  
             width: auto;
+        }
+
+        .footer-copy a {
+            color: rgba(255, 255, 255, 0.55);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-copy a:hover {
+            color: var(--gold);
         }
 
         @media (max-width: 900px) {
@@ -1093,8 +1108,8 @@ include 'values.php';
         <li><a href="menu.php">Menus</a></li>
     </ul>
     <div class="footer-divider"></div>
-    <p class="footer-copy">© 2026 Arishte. Tradition Made Deliciously Modern. &nbsp;|&nbsp; Privacy Policy &nbsp;|&nbsp;
-        Terms of Service</p>
+    <p class="footer-copy">© 2026 Arishte. Tradition Made Deliciously Modern. &nbsp;|&nbsp; <a href="privacy-policy.php">Privacy Policy</a> &nbsp;|&nbsp;
+        <a href="terms-of-service.php">Terms of Service</a></p>
 </footer>
 
 <script>
