@@ -1,7 +1,143 @@
+<?php
+// Start output buffering for AJAX requests
+if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && $_SERVER['HTTP_X_REQUESTED_WITH'] === 'XMLHttpRequest') {
+    ob_start();
+}
+
+include 'values.php';
+require 'config.php';
+require 'php_mailer/PHPMailer.php';
+
+// Load environment variables from .env file FIRST
+Config::load();
+
+// Handle form submission
+$message = '';
+$messageType = '';
+
+// Check if this is an AJAX request
+$isAjax = !empty($_SERVER['HTTP_X_REQUESTED_WITH']) && $_SERVER['HTTP_X_REQUESTED_WITH'] === 'XMLHttpRequest';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <?php
-include 'values.php';
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = htmlspecialchars(trim($_POST['name'] ?? ''));
+    $email = htmlspecialchars(trim($_POST['email'] ?? ''));
+    $phone = htmlspecialchars(trim($_POST['phone'] ?? ''));
+    $userMessage = htmlspecialchars(trim($_POST['message'] ?? ''));
+    
+    // Basic validation
+    if (empty($name) || empty($email) || empty($userMessage)) {
+        $message = "Please fill in all required fields.";
+        $messageType = "error";
+    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $message = "Please enter a valid email address.";
+        $messageType = "error";
+    } else {
+        try {
+            // Initialize PHPMailer with SMTP support
+            $mail = new PHPMailer(true);
+            
+            // Get settings from .env
+            $fromEmail = Config::get('MAIL_FROM_EMAIL', 'noreply@arishte.com');
+            $fromName = Config::get('MAIL_FROM_NAME', 'Arishte Kitchen');
+            $toEmail = Config::get('MAIL_TO_EMAIL', 'info@arishte.com');
+            $mailDriver = Config::get('MAIL_DRIVER', 'php');
+            
+            // Set sender and recipient
+            $mail->setFrom($fromEmail, $fromName);
+            $mail->addAddress($toEmail, 'Arishte Kitchen');
+            
+            // Set Reply-To as the client's email so replies go to them
+            $mail->setReplyTo($email, $name);
+            
+            // Use SMTP if configured
+            if ($mailDriver === 'smtp') {
+                $mailHost = Config::get('MAIL_HOST');
+                $mailPort = Config::get('MAIL_PORT', 587);
+                $mailUsername = Config::get('MAIL_USERNAME');
+                $mailPassword = Config::get('MAIL_PASSWORD');
+                $mailEncryption = Config::get('MAIL_ENCRYPTION', 'tls');
+                
+                if ($mailHost && $mailUsername && $mailPassword) {
+                    $mail->setHost($mailHost);
+                    $mail->setPort($mailPort);
+                    $mail->setUsername($mailUsername);
+                    $mail->setPassword($mailPassword);
+                    $mail->setEncryption($mailEncryption);
+                }
+            }
+            
+            // Set subject and body
+            $mail->Subject("New Contact Form Submission from Arishte Website");
+            
+            $emailBody = "
+            <html>
+            <head>
+                <title>New Contact Form Submission</title>
+                <style>
+                    body { font-family: Arial, sans-serif; color: #333; }
+                    .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+                    .field { margin-bottom: 15px; padding: 10px; background: #f5f5f5; border-left: 3px solid #B8965A; }
+                    .label { font-weight: bold; color: #2A1F14; }
+                    .value { color: #666; margin-top: 5px; }
+                </style>
+            </head>
+            <body>
+                <div class='container'>
+                    <h2 style='color: #2A1F14;'>New Contact Form Submission</h2>
+                    <div class='field'>
+                        <div class='label'>Name:</div>
+                        <div class='value'>{$name}</div>
+                    </div>
+                    <div class='field'>
+                        <div class='label'>Email:</div>
+                        <div class='value'><a href='mailto:{$email}'>{$email}</a></div>
+                    </div>
+                    <div class='field'>
+                        <div class='label'>Phone:</div>
+                        <div class='value'>" . (!empty($phone) ? $phone : "Not provided") . "</div>
+                    </div>
+                    <div class='field'>
+                        <div class='label'>Message:</div>
+                        <div class='value'>" . nl2br($userMessage) . "</div>
+                    </div>
+                </div>
+            </body>
+            </html>
+            ";
+            
+            $mail->Body($emailBody);
+            $mail->isHTML(true);
+            
+            // Send the email
+            if ($mail->send()) {
+                $message = "Thank you for your message! We'll get back to you soon.";
+                $messageType = "success";
+            } else {
+                $message = "Sorry, there was an error sending your message. Please try again later.";
+                $messageType = "error";
+            }
+        } catch (Exception $e) {
+            $message = "Error: " . $e->getMessage();
+            $messageType = "error";
+        }
+    }
+    
+    // For AJAX requests, return JSON response
+    if ($isAjax) {
+        // Clear any buffered output
+        ob_clean();
+        header('Content-Type: application/json');
+        echo json_encode([
+            'success' => $messageType === 'success',
+            'message' => $message
+        ]);
+        exit;
+    }
+}
 ?>
 <head>
     <meta charset="UTF-8">
@@ -716,6 +852,26 @@ include 'values.php';
             min-height: 90px;
         }
 
+        .form-message {
+            padding: 12px 16px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        .form-message.success {
+            background: rgba(184, 150, 90, 0.1);
+            border: 1px solid var(--gold);
+            color: var(--gold);
+        }
+
+        .form-message.error {
+            background: rgba(220, 53, 69, 0.1);
+            border: 1px solid #dc3545;
+            color: #dc3545;
+        }
+
         .btn-submit {
             width: 100%;
             padding: 15px;
@@ -1074,25 +1230,32 @@ include 'values.php';
         </div>
         <div class="contact-form">
             <p class="section-label" style="color:var(--gold-light);">Get in Touch</p>
-        
+            
+            <div id="formMessage" class="form-message" style="display: none;"></div>
+            
+            <form id="contactForm" method="post" action="">
                 <div class="form-group">
-                    <label>Full Name</label>
-                    <input type="text" placeholder="Full name">
+                    <label>Full Name *</label>
+                    <input type="text" name="name" placeholder="Full name" required>
                 </div>
             
-            <div class="form-group">
-                <label>Email Address</label>
-                <input type="email" placeholder="your@email.com">
-            </div>
-            <div class="form-group">
-                <label>Phone Number</label>
-                <input type="tel" placeholder="+94 ...">
-            </div>
-            <div class="form-group">
-                <label>Message</label>
-                <textarea placeholder="Feel free to ask for details, don’t hesitate to ask any questions!"></textarea>
-            </div>
-            <button class="btn-submit">Submit</button>
+                <div class="form-group">
+                    <label>Email Address *</label>
+                    <input type="email" name="email" placeholder="your@email.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" name="phone" placeholder="+94 ...">
+                </div>
+                
+                <div class="form-group">
+                    <label>Message *</label>
+                    <textarea name="message" placeholder="Feel free to ask for details, don't hesitate to ask any questions!" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn-submit">Submit</button>
+            </form>
         </div>
     </div>
 </section>
@@ -1132,6 +1295,70 @@ include 'values.php';
             navLinks.classList.remove('active');
         }
     });
+
+    // Handle contact form submission via AJAX
+    const contactForm = document.getElementById('contactForm');
+    const formMessage = document.getElementById('formMessage');
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const formData = new FormData(contactForm);
+            
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'X-Requested-With': 'XMLHttpRequest'
+                    }
+                });
+
+                // Get response text for debugging
+                const responseText = await response.text();
+                console.log('Response status:', response.status);
+                console.log('Response text:', responseText);
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                // Try to parse JSON
+                let data;
+                try {
+                    data = JSON.parse(responseText);
+                } catch (e) {
+                    console.error('Failed to parse JSON:', e);
+                    throw new Error('Invalid response format from server');
+                }
+                
+                // Display message
+                formMessage.textContent = data.message;
+                formMessage.className = 'form-message ' + (data.success ? 'success' : 'error');
+                formMessage.style.display = 'block';
+
+                // If successful, clear the form after showing message
+                if (data.success) {
+                    setTimeout(() => {
+                        contactForm.reset();
+                        // Hide message after 5 seconds
+                        formMessage.style.display = 'none';
+                    }, 3000);
+                } 
+                // If failed, keep form data for user to fix and re-submit
+                
+                // Scroll to message
+                formMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            } catch (error) {
+                console.error('Error:', error);
+                formMessage.textContent = error.message || 'An error occurred. Please check your connection and try again.';
+                formMessage.className = 'form-message error';
+                formMessage.style.display = 'block';
+                formMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        });
+    }
 </script>
 </body>
 </html>
