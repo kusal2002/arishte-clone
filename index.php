@@ -1085,7 +1085,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <section class="about-strip">
     <div class="about-image-wrap">
-        <img src="images/Kavili1.jpg" alt="Arishte Heritage Kitchen">
+        <img src="images/kavili11.png" alt="Arishte Heritage Kitchen">
     </div>
     <div class="about-text">
         <p class="section-label">Our Story</p>
@@ -1127,7 +1127,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
     <div class="specialties-grid">
         <div class="specialty-card specialty-card01">
-            <img src="https://static.wixstatic.com/media/bde431_cd18856b86604cc39e312efe3f63e158~mv2.jpg"
+            <img src="images/hathmaluva kanda.png"
                  alt="Hathmaluwa Herbal Kanda">
             <div class="specialty-overlay">
                 <div class="specialty-name">Hathmaluwa Herbal Kanda</div>
@@ -1135,7 +1135,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         </div>
         <div class="specialty-card specialty-card02">
-            <img src="https://static.wixstatic.com/media/bde431_a52d619329a04350984a0a8a7f851554~mv2.jpg"
+            <img src="images/kavili2.png"
                  alt="Awrudu Kavili Platter">
             <div class="specialty-overlay">
                 <div class="specialty-name">Awrudu Kavili Platter</div>
@@ -1143,7 +1143,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         </div>
         <div class="specialty-card specialty-card03">
-            <img src="https://static.wixstatic.com/media/bde431_86d979a3ea2145d2b66f4b18c167b622~mv2.jpg"
+            <img src="images/karapincha.png"
                  alt="Gotukola Wellness Blend">
             <div class="specialty-overlay">
                 <div class="specialty-name">Gotukola Wellness Blend</div>
@@ -1151,7 +1151,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         </div>
         <div class="specialty-card specialty-card04">
-            <img src="https://static.wixstatic.com/media/bde431_0c394f5a470a4743825f10982f9f7578~mv2.jpg"
+            <img src="images/karapinchaa.png"
                  alt="Karapincha Vitality Porridge">
             <div class="specialty-overlay">
                 <div class="specialty-name">Karapincha Vitality Porridge</div>
@@ -1159,7 +1159,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         </div>
         <div class="specialty-card specialty-card05">
-            <img src="https://static.wixstatic.com/media/bde431_9ffd46879dff4985b67623546e379d83~mv2.jpg"
+            <img src="images/trio.png"
                  alt="Kokis & Mun-Kavum Trio">
             <div class="specialty-overlay">
                 <div class="specialty-name">Kokis & Mun-Kavum Trio</div>
@@ -1167,7 +1167,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         </div>
         <div class="specialty-card specialty-card06">
-            <img src="https://static.wixstatic.com/media/bde431_cbfd4f13d10c4ce597322583fe6d17b7~mv2.jpg"
+            <img src="images/kondakawum.png"
                  alt="Konda Kavum Collection">
             <div class="specialty-overlay">
                 <div class="specialty-name">Konda Kavum Collection</div>
