@@ -1064,7 +1064,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <ul class="nav-links" id="navLinks">
         <li><a href="index.php" class="active">Home</a></li>
         <li><a href="portfolio.php">Portfolio</a></li>
-        <li><a href="menu.php">Menus</a></li>
+        <li><a href="menu.php">Menu</a></li>
     </ul>
 </nav>
 
@@ -1210,7 +1210,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="banner-bg"></div>
     <div class="banner-content">
         <h2 class="banner-title">Tradition Made<br><em>Deliciously Modern</em></h2>
-        <a href="menu.php" class="btn-primary">View Our Menus</a>
+        <a href="menu.php" class="btn-primary">View Our Menu</a>
     </div>
 </div>
 
@@ -1268,7 +1268,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <ul class="footer-nav">
         <li><a href="index.php">Home</a></li>
         <li><a href="portfolio.php">Portfolio</a></li>
-        <li><a href="menu.php">Menus</a></li>
+        <li><a href="menu.php">Menu</a></li>
     </ul>
     <div class="footer-divider"></div>
     <p class="footer-copy">© 2026 Arishte. Tradition Made Deliciously Modern. &nbsp;|&nbsp; <a href="privacy-policy.php">Privacy Policy</a> &nbsp;|&nbsp;

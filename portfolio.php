@@ -455,7 +455,7 @@ include 'values.php';
     <ul class="nav-links" id="navLinks">
       <li><a href="index.php">Home</a></li>
       <li><a href="portfolio.html" class="active">Portfolio</a></li>
-      <li><a href="menu.php">Menus</a></li>
+      <li><a href="menu.php">Menu</a></li>
     </ul>
   </nav>
 
@@ -604,7 +604,7 @@ include 'values.php';
     <ul class="footer-nav">
         <li><a href="index.php">Home</a></li>
         <li><a href="portfolio.php">Portfolio</a></li>
-        <li><a href="menu.php">Menus</a></li>
+        <li><a href="menu.php">Menu</a></li>
     </ul>
     <div class="footer-divider"></div>
     <p class="footer-copy">© 2026 Arishte. Tradition Made Deliciously Modern. &nbsp;|&nbsp; <a href="privacy-policy.php">Privacy Policy</a> &nbsp;|&nbsp;
