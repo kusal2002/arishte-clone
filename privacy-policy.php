@@ -504,39 +504,69 @@ include 'values.php';
     <h2>Privacy Policy</h2>
     
     <h3>1. Introduction</h3>
-    <p>Arishte ("we", "us", "our", or "Company") operates the website. This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.</p>
+    <p>Arishte ("we", "our", "us") operates this website. This Privacy Policy explains how we collect, use, and protect your information when you use our services.</p>
 
-    <h3>2. Information Collection and Use</h3>
-    <p>We collect several different types of information for various purposes to provide and improve our Service to you.</p>
-
-    <h4 style="font-size: 16px; color: var(--text); margin: 20px 0 10px; font-weight: 400;">Types of Data Collected:</h4>
+    <h3>2. Information We Collect</h3>
+    <p>We may collect the following information when you interact with our website:</p>
     <ul>
-        <li><strong>Personal Data:</strong> While using our Service, we may ask you to provide us with certain personally identifiable information ("Personal Data") such as your name, email address, postal address, and phone number.</li>
-        <li><strong>Usage Data:</strong> We may also collect information about how you access and use the Service ("Usage Data"), including IP address, browser type, pages visited, and the time and date of your visits.</li>
-        <li><strong>Cookies and Tracking Technologies:</strong> We use cookies and similar tracking technologies to track activity on our Service.</li>
+        <li><strong>Personal Information:</strong> Name, email address, phone number, or any details you provide through contact forms.</li>
+        <li><strong>User Activity Data:</strong> Basic information such as browser type, pages visited, and time spent on the site (for improving user experience).</li>
+    </ul>
+    <p>We only collect information that is necessary to provide and improve our services.</p>
+
+    <h3>3. When Do We Collect Information?</h3>
+    <p>We collect information when you:</p>
+    <ul>
+        <li>Fill out a contact form</li>
+        <li>Subscribe to updates or newsletters</li>
+        <li>Interact with features on our website</li>
     </ul>
 
-    <h3>3. Use of Data</h3>
-    <p>Arishte uses the collected data for various purposes:</p>
+    <h3>4. How We Use Your Information</h3>
+    <p>We use the collected data to:</p>
     <ul>
-        <li>To provide and maintain our Service</li>
-        <li>To notify you about changes to our Service</li>
-        <li>To allow you to participate in interactive features of our Service</li>
-        <li>To provide customer support</li>
-        <li>To gather analysis or valuable information to improve our Service</li>
-        <li>To monitor the usage of our Service</li>
-        <li>To detect, prevent, and address technical and security issues</li>
+        <li>Respond to your inquiries or requests</li>
+        <li>Improve our website and services</li>
+        <li>Provide better customer support</li>
+        <li>Send important updates related to your request</li>
     </ul>
+    <p>We <strong>do not use your data for spam or unnecessary marketing</strong>.</p>
 
-    <h3>4. Security of Data</h3>
-    <p>The security of your data is important to us but remember that no method of transmission over the Internet or electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Data, we cannot guarantee its absolute security.</p>
+    <h3>5. How We Protect Your Information</h3>
+    <p>We take appropriate security measures to protect your personal information:</p>
+    <ul>
+        <li>Your data is stored securely and accessed only when necessary</li>
+        <li>We regularly monitor our website for security vulnerabilities</li>
+        <li>Information shared through our contact forms is transmitted using secure methods</li>
+    </ul>
+    <p>While we take reasonable steps to protect your information, we continuously work to improve our security practices to ensure your data remains safe.</p>
 
-    <h3>5. Changes to This Privacy Policy</h3>
-    <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "effective date" at the top of this Policy.</p>
+    <h3>6. Cookies and Tracking</h3>
+    <p>Our website currently does not use cookies or tracking technologies to collect user data. If we introduce such features in the future, this Privacy Policy will be updated accordingly.</p>
 
-    <h3>6. Contact Us</h3>
-    <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-    <p><?php echo $email_text_only; ?></p>
+    <h3>7. Third-Party Disclosure</h3>
+    <p>We do <strong>not sell, trade, or share your personal information</strong> with outside parties.</p>
+
+    <h3>8. Third-Party Services</h3>
+    <p>We do not include or offer third-party products or services that collect your personal data.</p>
+
+    <h3>9. Children's Privacy</h3>
+    <p>Our website is not intended for children under 13 years of age. We do not knowingly collect personal information from children.</p>
+
+    <h3>10. Changes to This Privacy Policy</h3>
+    <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page.</p>
+
+    <h3>11. Your Rights</h3>
+    <p>You may request to:</p>
+    <ul>
+        <li>Access your personal data</li>
+        <li>Correct or update your information</li>
+        <li>Request deletion of your data</li>
+    </ul>
+    <p>You can do this by contacting us directly.</p>
+
+    <h3>12. Contact Us</h3>
+    <p>If you have any questions regarding this Privacy Policy, you can contact us through our website contact form or email.</p>
 </div>
 
 <section class="site-footer">

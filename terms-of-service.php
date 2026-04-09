@@ -503,41 +503,28 @@ include 'values.php';
 <div class="content-section">
     <h2>Terms of Service</h2>
     
-    <h3>1. Agreement to Terms</h3>
-    <p>By accessing and using this website, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.</p>
+    <p>Please read these Terms of Service carefully before using the Arishte website. By accessing or placing an order through this site, you confirm that you have read, understood, and agreed to be bound by the following terms.</p>
 
-    <h3>2. Use License</h3>
-    <p>Permission is granted to temporarily download one copy of the materials (information or software) from the Arishte website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p>
-    <ul>
-        <li>Modify or copy the materials</li>
-        <li>Use the materials for any commercial purpose or for any public display</li>
-        <li>Attempt to decompile or reverse engineer any software contained on Arishte website</li>
-        <li>Remove any copyright or other proprietary notations from the materials</li>
-        <li>Transfer the materials to another person or "mirror" the materials on any other server</li>
-        <li>Violate any applicable laws or regulations related to the use of this website</li>
-    </ul>
+    <h3>01. Agreement to Terms</h3>
+    <p>By accessing or using this website, you agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any part of these terms, we kindly recommend that you discontinue using the website.</p>
 
-    <h3>3. Disclaimer</h3>
-    <p>The materials on the Arishte website are provided "as is". Arishte makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p>
+    <h3>02. Purpose of the Website</h3>
+    <p>This website is operated by Arishte Traditional Foods for the purpose of offering our products for sale online. All content and information provided is for general informational purposes and may be updated or revised at any time without prior notice.</p>
 
-    <h3>4. Limitations</h3>
-    <p>In no event shall Arishte or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on the Arishte website.</p>
+    <h3>03. Intellectual Property & Use of Materials</h3>
+    <p>All content on this website—including but not limited to text, images, photography, and logos—is the intellectual property of Arishte Traditional Foods and is protected under applicable copyright and intellectual property laws. You may access and download materials for personal, non-commercial use only. Any unauthorized reproduction, distribution, or commercial use of our content is strictly prohibited without prior written consent.</p>
 
-    <h3>5. Accuracy of Materials</h3>
-    <p>The materials appearing on the Arishte website could include technical, typographical, or photographic errors. Arishte does not warrant that any of the materials on the website are accurate, complete, or current. Arishte may make changes to the materials contained on the website at any time without notice.</p>
+    <h3>04. Accuracy of Information & Limitation of Liability</h3>
+    <p>While Arishte strives to ensure the accuracy and completeness of all information published on this website, we do not warrant that the content is free from errors or omissions. The information is provided in good faith, and your use of this website and its content is at your own risk. Arishte Traditional Foods shall not be liable for any direct, indirect, or consequential loss or damage arising from your reliance on or use of the website.</p>
 
-    <h3>6. Links</h3>
-    <p>Arishte has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by Arishte of the site. Use of any such linked website is at the user's own risk.</p>
+    <h3>05. Third-Party Links</h3>
+    <p>Our website does not include or rely on third-party links. All content and links available on this website are managed and maintained by Arishte to ensure quality and reliability.</p>
 
-    <h3>7. Modifications</h3>
-    <p>Arishte may revise these terms of service for the website at any time without notice. By using this website, you are agreeing to be bound by the then current version of these terms of service.</p>
+    <h3>06. Customer Testimonials</h3>
+    <p>Customer reviews and testimonials published on this website represent the personal experiences of individual customers. They are shared in good faith and are not intended to imply that all customers will have identical experiences or results. Individual outcomes may vary.</p>
 
-    <h3>8. Governing Law</h3>
-    <p>These terms and conditions are governed by and construed in accordance with the laws of Sri Lanka, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p>
-
-    <h3>9. Contact Information</h3>
-    <p>If you have any questions about these Terms of Service, please contact us:</p>
-    <p><?php echo $email_text_only; ?></p>
+    <h3>07. Governing Law & Jurisdiction</h3>
+    <p>These Terms of Service are governed by and construed in accordance with the laws of the Democratic Socialist Republic of Sri Lanka. Any disputes arising out of or in connection with these terms shall be subject to the exclusive jurisdiction of the competent courts of Sri Lanka.</p>
 </div>
 
 <section class="site-footer">
