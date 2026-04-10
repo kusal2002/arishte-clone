@@ -158,7 +158,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             "@type": "Organization",
             "name": "Arishte",
             "url": "https://arishte.com/",
-            "logo": "https://arishte.com/images/ArishteLogo.png"
+            "logo": "https://arishte.com/images/ArishteLogo.ico"
         }
         </script>
 
