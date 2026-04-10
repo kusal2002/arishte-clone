@@ -6,6 +6,16 @@ include 'values.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Arishte" />
+    <meta property="og:description" content="Tradition made deliciously modern..." />
+    <meta property="og:image" content="https://arishte.com/images/ArishteLogo.png" />
+    <meta property="og:url" content="https://arishte.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+
     <title>Menu | Arishte</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap"
