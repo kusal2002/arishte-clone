@@ -148,6 +148,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta property="og:image" content="https://arishte.com/images/ArishteLogo.png" />
     <meta property="og:url" content="https://arishte.com/" />
     <meta property="og:type" content="website" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
 
     <title>Home | Arishte</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
