@@ -106,7 +106,7 @@ include 'values.php';
     }
     .page-hero-bg {
       position: absolute; inset: 0;
-      background-image: url('https://static.wixstatic.com/media/bde431_92b9edd04909442388f2af715dc70ba5~mv2.jpg');
+      background-image: url('images/protfolioHero1.jpg');
       background-size: cover; background-position: center;
       filter: brightness(0.4);
     }
@@ -503,7 +503,7 @@ include 'values.php';
     <div class="portfolio-grid">
 
       <div class="portfolio-item">
-        <img src="https://static.wixstatic.com/media/bde431_92b9edd04909442388f2af715dc70ba5~mv2.jpg" alt="Awrudu Kavili Platters">
+        <img src="images/protfolioHero1.jpg" alt="Awrudu Kavili Platters">
         <div class="portfolio-item-overlay">
           <div class="portfolio-item-num">01</div>
           <div class="portfolio-item-name">Awrudu Kavili Platters</div>
@@ -512,7 +512,7 @@ include 'values.php';
       </div>
 
       <div class="portfolio-item">
-        <img src="https://static.wixstatic.com/media/bde431_f8dd0c8fdf614b77ad6825889c261e14~mv2.jpg" alt="Wellness Through Tradition">
+        <img src="images/Wellness Through Tradition.jpg" alt="Wellness Through Tradition">
         <div class="portfolio-item-overlay">
           <div class="portfolio-item-num">02</div>
           <div class="portfolio-item-name">Wellness Through Tradition</div>
@@ -521,7 +521,7 @@ include 'values.php';
       </div>
 
       <div class="portfolio-item">
-        <img src="https://static.wixstatic.com/media/bde431_7c82b253a83243eeb8383d0be56365f3~mv2.jpg" alt="The Art of Sri Lankan Confections">
+        <img src="images/Sri Lankan Confections.jpg" alt="The Art of Sri Lankan Confections">
         <div class="portfolio-item-overlay">
           <div class="portfolio-item-num">03</div>
           <div class="portfolio-item-name">The Art of Sri Lankan Confections</div>
@@ -530,7 +530,7 @@ include 'values.php';
       </div>
 
       <div class="portfolio-item">
-        <img src="https://static.wixstatic.com/media/bde431_c3821fee0c5c4d3dadb53e8c36d69d8f~mv2.jpg" alt="Modernising Sri Lankan Delicacies">
+        <img src="images/Modernising Sri Lankan.jpg" alt="Modernising Sri Lankan Delicacies">
         <div class="portfolio-item-overlay">
           <div class="portfolio-item-num">04</div>
           <div class="portfolio-item-name">Modernising Sri Lankan Delicacies</div>
@@ -539,7 +539,7 @@ include 'values.php';
       </div>
 
       <div class="portfolio-item">
-        <img src="https://static.wixstatic.com/media/bde431_9efda438cdd5473a89b17d76f0a7d3d8~mv2.jpg" alt="Arishte Brand Story">
+        <img src="images/rishte Brand Story.jpg" alt="Arishte Brand Story">
         <div class="portfolio-item-overlay">
           <div class="portfolio-item-num">05</div>
           <div class="portfolio-item-name">Arishte Brand Story</div>
@@ -549,7 +549,7 @@ include 'values.php';
       </div>
 
       <div class="portfolio-item">
-        <img src="https://static.wixstatic.com/media/bde431_074eb2f59e36466ba3b8fd995345e05f~mv2.jpg" alt="Heritage Porridge Collection">
+        <img src="images/Heritage Porridge Collection.jpg" alt="Heritage Porridge Collection">
         <div class="portfolio-item-overlay">
           <div class="portfolio-item-num">06</div>
           <div class="portfolio-item-name">Arishte: Heritage Porridge Collection</div>

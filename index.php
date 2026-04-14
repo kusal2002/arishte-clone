@@ -171,7 +171,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           rel="stylesheet">
     <style>
         :root {
-            --cream: #F7F2EA;
+            --cream: #F7F2EA; 
             --warm-white: #FDFAF5;
             --gold: #B8965A;
             --gold-light: #D4AC6E;
@@ -323,7 +323,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         .hero-bg {
             position: absolute;
             inset: 0;
-            background-image: url('https://static.wixstatic.com/media/bde431_5e6694e12cec4b458413648ee89fa179~mv2.jpg');
+            background-image: url('images/homHero1.jpg');
             background-size: cover;
             background-position: center;
             filter: brightness(0.55);
@@ -733,7 +733,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         .banner-bg {
             position: absolute;
             inset: 0;
-            background-image: url('https://static.wixstatic.com/media/bde431_cbfd4f13d10c4ce597322583fe6d17b7~mv2.jpg');
+            background-image: url('images/homeHero2.jpg');
             background-size: cover;
             background-position: center;
             filter: brightness(0.45);

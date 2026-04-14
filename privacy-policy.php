@@ -186,7 +186,7 @@ include 'values.php';
         .page-hero-bg {
             position: absolute;
             inset: 0;
-            background-image: url('https://static.wixstatic.com/media/bde431_6765426448244c2da9ba45ab0e38c23c~mv2.png');
+            background-image: url('images/CorianderCleanse.png');
             background-size: cover;
             background-position: center;
             filter: brightness(0.45);

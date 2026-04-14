@@ -185,7 +185,7 @@ include 'values.php';
         .page-hero-bg {
             position: absolute;
             inset: 0;
-            background-image: url('https://static.wixstatic.com/media/bde431_6765426448244c2da9ba45ab0e38c23c~mv2.png');
+            background-image: url('images/menuHero1.png');
             background-size: cover;
             background-position: center;
             filter: brightness(0.45);
@@ -745,7 +745,7 @@ include 'values.php';
     <div class="menu-grid">
 
         <div class="menu-card">
-            <img src="https://static.wixstatic.com/media/bde431_df950dac44d74278936206bb4af2ac6c~mv2.png"
+            <img src="images/kurakanStrength.png"
                  alt="Kurrakkan Strength" class="menu-card-img">
             <div class="menu-card-body">
                 <div class="menu-card-tags">
@@ -758,7 +758,7 @@ include 'values.php';
         </div>
 
         <div class="menu-card">
-            <img src="https://static.wixstatic.com/media/bde431_2b4a287f6af143c5b599ebfbf3e9a857~mv2.png"
+            <img src="images/diyaBath.png"
                  alt="Diya Bath Balance" class="menu-card-img">
             <div class="menu-card-body">
                 <div class="menu-card-name">Diya Bath Balance</div>
@@ -769,7 +769,7 @@ include 'values.php';
         </div>
 
         <div class="menu-card">
-            <img src="https://static.wixstatic.com/media/bde431_d60859b7052649fb82ece3d91be53cf1~mv2.png"
+            <img src="images/KarapinchaBoost.png"
                  alt="Karapincha Boost" class="menu-card-img">
             <div class="menu-card-body">
                 <div class="menu-card-name">Karapincha Boost</div>
@@ -779,7 +779,7 @@ include 'values.php';
         </div>
 
         <div class="menu-card">
-            <img src="https://static.wixstatic.com/media/bde431_c560c5226a0f446f8b49676d4d31cf64~mv2.png"
+            <img src="images/walpenela.png"
                  alt="Walpenela Vital" class="menu-card-img">
             <div class="menu-card-body">
                 <div class="menu-card-name">Walpenela Vital</div>
@@ -789,7 +789,7 @@ include 'values.php';
         </div>
 
         <div class="menu-card" style="grid-column: 1 / -1;">
-            <img src="https://static.wixstatic.com/media/bde431_aa8124026bfd4991b3631306620b8c9a~mv2.png"
+            <img src="images/hatahavariya.png"
                  alt="Hathawariya Elixir" class="menu-card-img">
             <div class="menu-card-body">
                 <div class="menu-card-name">Hathawariya Elixir</div>
@@ -812,7 +812,7 @@ include 'values.php';
     </div>
     <div class="infusions-grid">
         <div class="infusion-card">
-            <img src="https://static.wixstatic.com/media/bde431_747417d71bac492eb9397f88f800a4b9~mv2.png"
+            <img src="images/appleGlow.png"
                  alt="Spiced Apple Glow">
             <div class="infusion-body">
                 <h3>Spiced Apple Glow</h3>
@@ -822,7 +822,7 @@ include 'values.php';
             </div>
         </div>
         <div class="infusion-card">
-            <img src="https://static.wixstatic.com/media/bde431_6765426448244c2da9ba45ab0e38c23c~mv2.png"
+            <img src="images/CorianderCleanse.png"
                  alt="Coriander Cleanse">
             <div class="infusion-body">
                 <h3>Coriander Cleanse</h3>
