@@ -164,7 +164,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <title>Home | Arishte</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="icon" href="https://arishte.com/ArishteLogo.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico?v=2" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico?v=2" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/ArishteLogo.png">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap"
           rel="stylesheet">
     <style>
